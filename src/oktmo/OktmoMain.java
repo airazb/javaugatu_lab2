@@ -26,7 +26,7 @@ public class OktmoMain {
         OktmoData oData = new OktmoData();
         OktmoData oPatData = new OktmoData();
         for(File f : getAllFiles(new File("."))){
-            if(f.isFile() & f.getName().indexOf("_2.csv")>0){
+            if(f.isFile() && f.getName().indexOf("_2.csv")>0){
                 System.out.println("-----"+f.getName());
                 readPlaces(f.getName(),oData);
                 readPaternPlaces(f.getName(),oPatData);
@@ -70,7 +70,7 @@ public class OktmoMain {
         
         //OktmoData oDataR = new OktmoData();
         for(File f : getAllFiles(new File("."))){
-            if(f.isFile() & f.getName().indexOf("_1.csv")>0){
+            if(f.isFile() && f.getName().indexOf("_1.csv")>0){
                 System.out.println("-----"+f.getName());
                 readData(f.getName(),oPatData);
             }
